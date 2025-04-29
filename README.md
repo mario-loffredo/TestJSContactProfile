@@ -7,7 +7,8 @@ The LocalizationsTest in test/java/testJSContactProfileForRDAP is executed on th
 
 ## Java
 
-TestJSContactProfile run on Java 17.
+TestJSContactProfile run on jdk 17 (default) and 21.
+To run the project on other jdks than the default one, please change the "java.version" property in pom.xml.
 
 ## Maven
 
