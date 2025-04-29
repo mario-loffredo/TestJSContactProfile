@@ -11,6 +11,8 @@ public class LocalizationsTest {
     public void testLocalizations() throws IOException {
 
         String json = "{" +
+                "\"@type\": \"Card\"," +
+                "\"version\": \"2.0\"," +
                 "\"name\": {\"full\":\"Vasya Pupkin\"}," +
                 "\"language\": \"en\"," +
                 "\"organizations\": { \"org\": {\"name\": \"My Company\" } }, " +
