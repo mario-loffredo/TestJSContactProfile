@@ -1,4 +1,4 @@
-package testJSContactProfile;
+package testJSContactProfileForRDAP;
 
 import lombok.*;
 

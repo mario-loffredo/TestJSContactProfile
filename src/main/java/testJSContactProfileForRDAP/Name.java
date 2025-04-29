@@ -1,4 +1,4 @@
-package testJSContactProfile;
+package testJSContactProfileForRDAP;
 
 import lombok.*;
 import lombok.experimental.SuperBuilder;
@@ -7,11 +7,11 @@ import lombok.experimental.SuperBuilder;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Address {
+@EqualsAndHashCode(callSuper = false)
+public class Name {
 
-    AddressComponent[] components;
+    NameComponent[] components;
 
     String full;
 
-    String countryCode;
 }

@@ -1,4 +1,4 @@
-package testJSContactProfile;
+package testJSContactProfileForRDAP;
 
 import lombok.*;
 import lombok.experimental.SuperBuilder;
@@ -8,10 +8,10 @@ import lombok.experimental.SuperBuilder;
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = false)
-public class Name {
+public class NameComponent {
 
-    NameComponent[] components;
+    String kind;
 
-    String full;
+    String value;
 
 }

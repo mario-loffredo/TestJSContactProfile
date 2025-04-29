@@ -1,4 +1,4 @@
-package testJSContactProfile;
+package testJSContactProfileForRDAP;
 
 import com.fasterxml.jackson.annotation.*;
 import com.fasterxml.jackson.core.JsonProcessingException;

@@ -1,4 +1,4 @@
-package testJSContactProfile;
+package testJSContactProfileForRDAP;
 
 import org.junit.Test;
 import java.io.IOException;
