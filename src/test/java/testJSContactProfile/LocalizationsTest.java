@@ -12,6 +12,7 @@ public class LocalizationsTest {
 
         String json = "{" +
                 "\"name\": {\"full\":\"Vasya Pupkin\"}," +
+                "\"language\": \"en\"," +
                 "\"organizations\": { \"org\": {\"name\": \"My Company\" } }, " +
                 "\"addresses\":{" +
                     "\"addr\": {" +
@@ -44,7 +45,7 @@ public class LocalizationsTest {
                 "}";
 
 
-        Card jsCard = Card.toJSCard(json);
+        Card jsCard = Card.toCard(json);
         assertEquals("testLocalizations - 1", jsCard.getName().getFull(), "Vasya Pupkin");
         assertEquals("testLocalizations - 2", jsCard.getOrganizations().get("org").getName(),"My Company");
         assertFalse("testLocalizations - 3", jsCard.getAddresses().isEmpty());
@@ -56,6 +57,7 @@ public class LocalizationsTest {
         assertEquals("testLocalizations - 9", jsCard.getAddresses().get("addr").getComponents()[2].getKind(), "locality");
         assertEquals("testLocalizations - 10", jsCard.getAddresses().get("addr").getComponents()[2].getValue(), "Kyiv");
         assertEquals("testLocalizations - 11", jsCard.getAddresses().get("addr").getCountryCode(), "UA");
+        assertEquals("testLocalizations - 12", jsCard.getLanguage(), "en");
 
         assertEquals("testLocalizations - 1.ua", jsCard.getLocalizations().get("ua").getName().getFull(), "VВася Пупкин");
         assertEquals("testLocalizations - 2.ua", jsCard.getLocalizations().get("ua").getOrganizations().get("org").getName(), "Моя Компания");

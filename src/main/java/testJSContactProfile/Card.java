@@ -24,9 +24,11 @@ public class Card extends LocalizableObject implements Serializable {
 
     String version;
 
+    String language;
+
     Map<String, LocalizableObject> localizations;
 
-    public static Card toJSCard(String json) throws JsonProcessingException {
+    public static Card toCard(String json) throws JsonProcessingException {
 
         return mapper.readValue(json, Card.class);
 
