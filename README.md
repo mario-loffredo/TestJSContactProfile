@@ -6,7 +6,7 @@ This is a simple project to test JSContact profiles as described in [draft-ietf-
 
 ## Java
 
-jscontact-tools run on Java 17.
+TestJSContactProfile run on Java 17.
 
 ## Maven
 
