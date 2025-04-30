@@ -17,4 +17,6 @@ public class LocalizableObject {
 
     Map<String, Address> addresses;
 
+    Map<String, EmailAddress> emails;
+
 }
