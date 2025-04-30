@@ -10,10 +10,11 @@ import java.util.*;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-        "@type", "version", "language",
+        "@type", "version", "kind", "language",
         "name", "organizations",
         "emails", "phones",
         "addresses",
+        "links",
         "localizations"
         })
 
@@ -29,9 +30,13 @@ public class Card extends LocalizableObject implements Serializable {
 
     String version;
 
+    String kind;
+
     String language;
 
     Map<String,Phone> phones;
+
+    Map<String, Link> links;
 
     Map<String, LocalizableObject> localizations;
 
