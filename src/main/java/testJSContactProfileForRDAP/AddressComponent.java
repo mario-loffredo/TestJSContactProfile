@@ -2,7 +2,6 @@ package testJSContactProfileForRDAP;
 
 import lombok.*;
 
-@Builder
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
