@@ -22,6 +22,8 @@ public class Card extends LocalizableObject implements Serializable {
 
     String language;
 
+    Map<String,Phone> phones;
+
     Map<String, LocalizableObject> localizations;
 
     public static Card toCard(String json) throws JsonProcessingException {
